@@ -1,33 +1,31 @@
 const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema({
-  ids: {
+  ide: {
     type: Number,
   },
   name: {
     type: String,
   },
-  category: {
-    type: String,
-  },
-  ratting: {
-    type: String,
-  },
-  image: {
+  company: {
     type: String,
   },
   price: {
     type: Number,
   },
-  oPrice: {
+  colors:{
+    type: Array,
+  },
+  image: {
     type: String,
   },
-  subcat: {
+  description:{
     type: String,
   },
-  quantity: {
-    type: Number,
+  category: {
+    type: String,
   },
+
 });
 const product = mongoose.model("product", productSchema);
 

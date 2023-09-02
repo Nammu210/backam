@@ -1,10 +1,8 @@
-const { registerUser, loginUser } = require("../dbController/userController");
+const { registerUser, loginUser } = require("../Controller/userController");
 
-const userdbroute=require("express").Router();
+const userdbroute = require("express").Router();
 
+userdbroute.post("/register", registerUser);
+userdbroute.post("/login", loginUser);
 
-
-userdbroute.post("/register",registerUser)
-userdbroute.post('/login',loginUser)
-
-module.exports=userdbroute
+module.exports = userdbroute;
