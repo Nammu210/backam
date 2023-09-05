@@ -16,6 +16,8 @@ const addProductTodb = async (req, res) => {
     image,
     description,
     category,
+    ratting,
+    oPrice,
 
   } = data;
 
@@ -28,6 +30,8 @@ const addProductTodb = async (req, res) => {
     image,
     description,
     category,
+    ratting,
+    oPrice,
 
   });
   return res.send({ msg: "user data has been stored", result: result });

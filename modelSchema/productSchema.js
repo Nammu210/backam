@@ -25,6 +25,13 @@ const productSchema = new mongoose.Schema({
   category: {
     type: String,
   },
+  ratting:{
+    type:String,
+  },
+  oPrice:{
+    type:String,
+  },
+
 
 });
 const product = mongoose.model("product", productSchema);
